@@ -1,0 +1,88 @@
+/* Ensure the carousel is not resized */
+.carousel {
+    max-width: 100%;
+    margin: 0 auto; /* Center the carousel */
+    height: 400px; /* Set the height of the carousel */
+  }
+  
+  .carousel-inner {
+    height: 100%; /* Make the carousel items take full height */
+  }
+  
+  .carousel-image-wrapper {
+    position: relative;
+    height: 100%;
+  }
+  
+  .carousel-image {
+    height: 100%;
+    object-fit: cover; /* Make the image fill the carousel area */
+  }
+  
+  .carousel-caption-wrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+    opacity: 0.7;
+  }
+  
+  .carousel-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .carousel-description {
+    font-size: 1.25rem;
+  }
+  
+  /* Basic styling for previous and next buttons */
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    color: #f0f0f0; /* Slight hover effect */
+  }
+  
+  .carousel-control-prev span,
+  .carousel-control-next span {
+    font-size: 30px; /* Font size of the arrows */
+    font-weight: bold;
+  }
+
+  .loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #000;
+    font-weight: bold;
+  }
+  /* Custom class for backdrop blur effect */
+.backdrop-blur {
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}

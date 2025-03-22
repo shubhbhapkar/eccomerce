@@ -1,0 +1,41 @@
+input[type="range"].custom-range {
+    accent-color: #2874f0; /* Flipkart's blue color */
+    --bs-range-thumb-bg: #2874f0; /* Bootstrap variable for the thumb */
+    --bs-range-track-bg: #d3e2f5; /* Lightened track color */
+    --bs-range-thumb-border: none; /* Remove border around thumb */
+  }
+  
+  input[type="range"].custom-range::-webkit-slider-thumb {
+    background-color: #2874f0; /* Thumb color for Webkit browsers */
+    border: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+  
+  input[type="range"].custom-range::-moz-range-thumb {
+    background-color: #2874f0; /* Thumb color for Firefox */
+    border: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+  
+  input[type="range"].custom-range::-webkit-slider-runnable-track {
+    background-color: #d3e2f5; /* Track color for Webkit browsers */
+    height: 5px;
+    border-radius: 20px;
+  }
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card .transition-opacity {
+    transition: opacity 0.3s ease;
+  }
+  
+  .card-footer .btn:hover {
+    background-color: #ffcc00; /* Subtle yellow highlight */
+  }
+  

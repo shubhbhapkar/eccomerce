@@ -1,0 +1,16 @@
+.btn-primary:hover {
+    background-color: #0a5bd4;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e7f1fc;
+    color: #0a5bd4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .text-primary:hover {
+    color: #0a5bd4;
+    transition: color 0.3s ease;
+  }
+  
